@@ -1,0 +1,166 @@
+body {
+    height: 100vh;
+     background: linear-gradient(90deg,#393939,#b5acac);
+  
+  }
+  
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 49.9%;
+    top: 11.1%;
+    width: 680px;
+    height: 580px;
+    background:#222222;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+  
+  
+  
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -18px;
+}
+
+h1 span, h2 span {
+    color: #282828;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:  rgb(225, 23, 225);
+    font-weight: bold;
+}
+
+
+.hero {
+    top: 12px;
+    height: 92vh;              
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+   
+  }
+  
+  .hero h2 {
+    margin-left: -940px;
+    font-size: 5rem;             
+    color: white;                
+    margin-bottom: 1360px;         
+  }
+
+
+.about {
+    text-align: left;
+    padding: 50px;
+}
+
+
+
+.button-container {
+    position: relative;
+    top: 465px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    background-color: #222222;  
+    padding: 19px;
+    border-radius: 80px; 
+    width: fit-content;
+    margin: 20px auto;
+    
+}
+
+
+/* Effet de transition pour les boutons */
+.nav-button {
+    background-color: #615858; 
+    color:  #ffffff;  
+    border: none;
+    padding: 10px 20px;
+    border-radius: 80px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Changement de couleur et effet de translation lors du survol */
+.nav-button:hover {
+    background-color: #9e8f8f;
+    transform: translateY(-5px); /* Légère translation vers le haut */
+}
+
+/* Ajouter un effet de "click" */
+.nav-button:active {
+    transform: translateY(1px); /* Légère translation vers le bas quand le bouton est cliqué */
+}
+
+/* Effet de focus */
+.nav-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ajout d'un contour lumineux */
+}
+
+
+.image-container {
+    position: relative;
+    left: 350px;
+    width: 130%;          
+    text-align: center;   
+    margin-top: -335px;   
+    transform: scale(0.18);  
+  }
+
+  .button-containerdeux {
+    position: relative;
+    top: -1580px;
+    gap: 15px;
+    background-color: #222222;  
+    padding: 17px;
+    border-radius: 80px; 
+    width: fit-content;
+    margin: 20px auto;
+    margin-left: 20px; 
+}
+
+.logo-svg {
+    width: 50px;  
+    height: auto; 
+}
+
