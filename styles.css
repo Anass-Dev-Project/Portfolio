@@ -107,7 +107,7 @@ nav ul li a {
 }
 
 
-/* Effet de transition pour les boutons */
+
 .nav-button {
     background-color: #615858; 
     color:  #ffffff;  
@@ -120,21 +120,21 @@ nav ul li a {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Changement de couleur et effet de translation lors du survol */
+
 .nav-button:hover {
     background-color: #9e8f8f;
-    transform: translateY(-5px); /* Légère translation vers le haut */
+    transform: translateY(-5px); 
 }
 
-/* Ajouter un effet de "click" */
+
 .nav-button:active {
-    transform: translateY(1px); /* Légère translation vers le bas quand le bouton est cliqué */
+    transform: translateY(1px); 
 }
 
-/* Effet de focus */
+
 .nav-button:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ajout d'un contour lumineux */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 
