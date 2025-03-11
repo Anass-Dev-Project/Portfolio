@@ -1,7 +1,8 @@
 body {
+  
   font-family: 'Red Hat Text', sans-serif;
-    min-height: 200vh;
-     background: linear-gradient(90deg,#393939,#b5acac);
+    
+     background: linear-gradient(90deg,#343434,#b5acac);
   
   }
 
@@ -12,8 +13,8 @@ body {
   .slider-thumb::before {
     position: absolute;
     content: "";
-    left: 52.5%;
-    top: 11.9%;
+    left: 53.9%;
+    top: 19.2%;
     width: 680px;
     height: 580px;
     background:#222222;
@@ -102,8 +103,7 @@ nav ul li a {
     gap: 15px;
     display: flex;
     justify-content: space-around;  
-    align-items: center;
-    background-color: #222222;  
+    align-items: center;  
     padding: 19px;
     border-radius: 80px; 
     width: fit-content;
@@ -154,14 +154,14 @@ nav ul li a {
 
   .button-containerdeux {
     position: relative;
-    top: -1580px;
+    top: -1355px;
     gap: 15px;
     background-color: #222222;  
     padding: 17px;
     border-radius: 80px; 
     width: fit-content;
     margin: 20px auto;
-    margin-left: 20px; 
+    margin-left: 36px; 
 }
 
 .logo-svg {
@@ -170,14 +170,15 @@ nav ul li a {
 }
 
 .skills-grid {
-  font-size: 17px;
+  font-size: 22px;
   padding: 50px;
   text-align: center;
   background: #222222;
   color: white;
   border-radius: 20px;
-  margin: -590px auto;
+  margin-top: -600px;
   width: 80%;
+  margin-left: 100px;
 }
 
 .grid-container {
@@ -194,8 +195,8 @@ nav ul li a {
   background-color: #6e6e6e;
   padding: 20px;
   border-radius: 10px;
-  font-size: 1.2rem;
-  color: #ffffff;
+  font-size: 0.8rem;
+  background: linear-gradient(90deg,#343434,#b5acac);
   text-decoration: none; 
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -226,4 +227,248 @@ nav ul li a {
 .svg-icon {
   width:0px; 
   height: 100px; 
+}
+
+.projects-experiences {
+  padding: 50px;
+  text-align: center;
+  background: #222222;
+  color: white;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.project-grid, .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-item, .experience-item {
+  background-color: #6e6e6e;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-item:hover, .experience-item:hover {
+  background-color: #b2b2b2;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item:active, .experience-item:active {
+  transform: translateY(0);
+  background-color: #9e8f8f;
+}
+
+.modern-features {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  margin: 200px auto;
+  width: 60%;
+  font-size: 25px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background: linear-gradient(90deg,#7b7b7b,#181717);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-item:hover {
+  background-color: #b2b2b2;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.feature-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-item ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+
+.navbar {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 1500;
+  text-align: center;
+  margin-left: 690px;
+}
+
+.sticky-btn {
+  background: linear-gradient(90deg, #737373, #908787);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sticky-btn:hover {
+  background-color: #9e8f8f;
+  transform: translateY(-5px);
+}
+
+.sticky-btn:active {
+  transform: translateY(1px);
+}
+
+.sticky-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.button-containertroix {
+  position: relative;
+  gap: 0px;
+  background-color: #222222;  
+  padding: 17px;                                                  
+  border-radius: 80px; 
+  width: fit-content;
+  margin: 2px auto;
+  margin-left: 502px; 
+  top: -94px ;
+}
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.content {
+  flex: 1;
+}
+footer {
+  background: #222222;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+  margin-top: 100px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 5px 0;
+}
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+  color: #3fe8f4;
+}
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+
+
+
+
+.slider-thumb2::before {
+  position: absolute;
+  content: "";
+  left: 3.9%;
+  top: 223.2%;
+  width: 680px;
+  height: 580px;
+  background:  #222222;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+.button-containerquatres {
+  position: relative;
+  top: -1385px;
+  gap: 15px;
+  background-color: #222222;  
+  padding: 17px;
+  border-radius: 80px; 
+  width: fit-content;
+  margin: 20px auto;
+  margin-left: 985px; 
 }
